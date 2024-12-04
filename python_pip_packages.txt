@@ -1,0 +1,57 @@
+
+Python Packages
+Windows Installation Steps
+1.	Install Microsoft Visual Studio Community Edition (this is the free option)
+Include Python and C++ support when choosing configuration options
+https://visualstudio.microsoft.com/downloads/
+Reference: https://github.com/ehmatthes/pcc/blob/master/chapter_15/README.md
+
+ Pip is the package manager for Python.
+ It is installed when you installed Python.
+We use it to install additional packages beyond the standard python library.
+It will connect over the Internet to the package's repository.
+It will download the desired package as well as any other packages required for your package to run.
+
+ 
+From the windows Command Prompt 
+  
+#python -m pip install DesiredPackageName   
+
+These are the commands to install the packages which align with chapters 15 - 17 in our book.
+py -m pip install pandas (numpy & others will install automatically)
+py -m pip install matplotlib
+py -m pip install  plotly
+py -m pip install requests
+
+# To list installed packages:
+4.	py -m pip list      installed packages and versions (alphabetical order).
+
+5.	A preliminary test is to confirm that Python can import the a packages we will use: Create and  run the below program. 
+import matplotlib
+import plotly
+import numpy 
+import pandas
+import requests
+print ('hi')
+
+#Output will be
+#hi
+
+To uninstall a spefic packages, the command is:
+  python -m pip deinstall DesiredPackageName  
+
+
+A searchable list of available Python packages is posted at the Python Package Index (PyPI):
+https://pypi.org/
+
+
+
+https://www.codabrainy.com/en/python-compiler/
+This is an on online python compiler that you can use to edit and run your ‘matplotlib’ python code online
+in the event that matplotlib refuses to install for you.
+
+-------------------------------------------------------------------------------
+
+
+
+
